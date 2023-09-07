@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhai aajo</title>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&family=Gloria+Hallelujah&family=Quicksand&family=Satisfy&display=swap');
-    
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Barlow+Condensed:ital,wght@1,200&family=Gloria+Hallelujah&family=Quicksand&family=Satisfy&family=Urbanist:wght@500&display=swap');
+        
         .title{
             font-family: 'Gloria Hallelujah', cursive;
             font-size: 200px;
@@ -14,7 +14,17 @@
             text-align: center;
             -webkit-text-stroke: 1px black;
         }
+        .small {
+            font-size: 35px;
+            display: inline;
+            color:mintcream;
+            -webkit-text-stroke:0;
+            margin-left: 20px;
+        }
 
+        .fontchange{
+            font-family: 'Archivo Narrow', sans-serif;
+        }
         body{
             background-color: black;
 
@@ -49,6 +59,110 @@
             font-size: 30px;
             white-space:pre-line;
         }
+        .projects-h{
+            color:black;
+            font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            font-size: 90px;
+            margin-top: 80px;
+        }
+        .project-p{
+            color:black;
+            font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            font-size: 30px;
+            white-space:pre-line;
+        }
+        .projects-div{
+            background-color: white;
+            width: 100%;
+        }
+        .float-container{
+            display: inline-block;
+            padding-top: 40px;
+        }
+
+        .float-child{
+            margin-left: 100px;
+            margin-right: 100px;
+            float: left;
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 20px;
+            background-color: black;
+            border: 5px solid limegreen;
+            width: 700px
+        }
+
+        .float-child h1{
+            font-size:30px;
+            font-family: 'Urbanist', sans-serif;
+            color: white;
+        }
+        .float-child h2{
+            color: white;
+            font-weight: 5px;
+            font-size:20px;
+            font-family: 'Urbanist', sans-serif;
+            white-space:pre-line;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        img:hover{
+            cursor: pointer;
+        }
+
+.redirect {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  margin-bottom: 20px;
+}
+.redirect:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.redirect:hover {
+  transform: translateY(-1px);
+}
+
+.redirect:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+.bottom {
+    margin-top: 5px;
+}
+                
     </style>
 </head>
 <body>
@@ -61,10 +175,33 @@
         <p class="our-vision-p">
             With the amount of OTT Platforms these days it is hard to choose on what to choose,
             our vision is to provide the best for free. The word Bhai meaning brother and aajo
-            meaning watch. We want to have brother with our users. We know that it is not completely
+            meaning watch this . We want to have brotherhood with our users. We know that it is not completely
             legal to do but with your ott expanses increasing day by day creating a headache we are the
             solution.
         </p>
+    </div>
+    <div class="projects-div">
+        <h1 class="projects-h">Our Projects</h1>
+        <div class="float-container">
+            <div class="float-child">
+                <h1>No Name FR</h1>
+                <h2>No Name FR is a 3rd party streamer based website 
+                    with a large variety of shows and movies embedded in the 
+                    website and is 100% ad free</h2>
+                    <button class="redirect" onclick="window.open('https:\/\/watch.jenildobaria.repl.co')">Visit Me</button>
+            </div>
+            <div class="float-child">
+                <h1>Jenilz</h1>
+                <h2>A Way smaller entertaintment library with some 
+                    hindi dubbed movies is an ideal choice for users to 
+                    explore new movies</h2>
+                <button class="redirect" onclick="window.open('https:\/\/bhaiaajo.github.io/watch')">Visit Me</button>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <h1 class="small fontchange" style="float: left;">Bhai aajo 2023</h1>
+        <img onclick="window.open('https:\/\/discord.gg/bqXhREHEDt')" width="50" height="40" src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png" alt="discord-icon" style="float: right; margin-top: 25px;margin-right: 20px;">
     </div>
 </body>
 </html>

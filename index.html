@@ -33,20 +33,22 @@
 
         .title {
             font-family: 'Gloria Hallelujah', cursive;
-            font-size: 200px;
+            font-size: 10vw;
             color: white;
             -webkit-text-stroke: 1px black;
+            margin: 0;
         }
 
         .sub-heading {
             font-family: 'Barlow Condensed', sans-serif;
-            font-size: 90px;
+            font-size: 6vw;
             color: black;
             -webkit-text-stroke: 1px white;
+            margin: 0;
         }
 
         .vision-section, .projects-div {
-            padding: 50px 20px;
+            padding: 20px;
             text-align: center;
         }
 
@@ -61,14 +63,14 @@
 
         .projects-h, .our-vision-h {
             font-family: 'Quicksand', sans-serif;
-            font-size: 90px;
-            margin-top: 80px;
+            font-size: 8vw;
+            margin: 50px 0 20px 0;
         }
 
         .our-vision-p, .project-p {
-            font-size: 30px;
+            font-size: 4vw;
             white-space: pre-line;
-            max-width: 800px;
+            max-width: 90%;
             margin: 0 auto;
         }
 
@@ -84,7 +86,7 @@
             text-align: center;
             background-color: black;
             border: 5px solid limegreen;
-            width: 300px;
+            width: 90vw;
             padding: 20px;
             transition: transform 0.3s;
         }
@@ -94,14 +96,14 @@
         }
 
         .float-child h1 {
-            font-size: 30px;
+            font-size: 6vw;
             font-family: 'Urbanist', sans-serif;
             color: white;
         }
 
         .float-child h2 {
             color: white;
-            font-size: 20px;
+            font-size: 4vw;
             padding: 15px;
         }
 
@@ -110,7 +112,7 @@
             color: white;
             border: none;
             padding: 10px 20px;
-            font-size: 16px;
+            font-size: 4vw;
             font-weight: 600;
             cursor: pointer;
             transition: background-color 0.3s;
@@ -128,7 +130,7 @@
         }
 
         .small {
-            font-size: 35px;
+            font-size: 6vw;
             color: mintcream;
         }
 
@@ -137,7 +139,7 @@
             width: 50px;
             height: 40px;
         }
-        img:hover {
+                img:hover {
 			animation: scaleUp 700ms ease-in-out;
               animation-fill-mode: forwards;
         }
@@ -149,7 +151,50 @@
       transform: scale(1.5);
     }
         }
-        
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .title {
+                font-size: 15vw;
+            }
+
+            .sub-heading {
+                font-size: 8vw;
+            }
+
+            .projects-h, .our-vision-h {
+                font-size: 12vw;
+            }
+
+            .our-vision-p, .project-p {
+                font-size: 5vw;
+            }
+
+            .redirect {
+                font-size: 5vw;
+            }
+
+            .small {
+                font-size: 8vw;
+            }
+
+            img {
+                width: 40px;
+                height: 30px;
+            }
+                            img:hover {
+			animation: scaleUp 700ms ease-in-out;
+              animation-fill-mode: forwards;
+        }
+        @keyframes scaleUp{
+    0%{
+      transform: scale(1.0);
+    }
+    100%{
+      transform: scale(1.5);
+    }
+        }
+        }
     </style>
 </head>
 <body>
@@ -176,7 +221,7 @@
                 <button class="redirect" onclick="window.open('https://streamfr.onrender.com')">Visit Me</button>
             </div>
             <div class="float-child">
-                <h1>NNFR</h1>
+                <h1>Jenilz</h1>
                 <h2>A compact entertainment library featuring a selection of Hindi-dubbed movies, Jenilz is perfect for those looking to explore new films.</h2>
                 <button class="redirect" onclick="window.open('https://bhaiaajo.github.io/watch')">Visit Me</button>
             </div>

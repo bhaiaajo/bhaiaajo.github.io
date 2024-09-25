@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2GSJRJYKS0"></script>
+    <script async src="https://www1googletagmanager.com/gtag/js?id=G-2GSJRJYKS0"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -16,13 +16,14 @@
 
         body {
             margin: 0;
-            background-color: black;
+            background-color: #1E1E1E; /* Dark Charcoal */
             font-family: 'Quicksand', sans-serif;
-            color: white;
+            color: #E0E0E0; /* Light gray for general text */
         }
 
         .main-div {
-            background: url("https://media.phillyvoice.com/media/images/movietheaterstudy.2e16d0ba.fill-1200x630-c0.jpg") center/cover no-repeat;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.7)), 
+                        url("https://media.phillyvoice.com/media/images/movietheaterstudy.2e16d0ba.fill-1200x630-c0.jpg") center/cover no-repeat;
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -33,45 +34,53 @@
 
         .title {
             font-family: 'Gloria Hallelujah', cursive;
-            font-size: 10vw;
-            color: white;
-            -webkit-text-stroke: 1px black;
+            font-size: 8vw;
+            color: #C62828; /* Deep Red */
+            -webkit-text-stroke: 1px #333;
             margin: 0;
         }
 
         .sub-heading {
             font-family: 'Barlow Condensed', sans-serif;
-            font-size: 6vw;
-            color: black;
-            -webkit-text-stroke: 1px white;
+            font-size: 4vw;
+            color: #FFB300; /* Warm Yellow */
             margin: 0;
         }
 
-        .vision-section, .projects-div {
-            padding: 20px;
+        .vision-section {
+            background-color: #282828; /* Slightly lighter dark gray */
+            padding: 50px 20px;
             text-align: center;
         }
 
-        .vision-section {
-            background-color: #111;
-        }
-
         .projects-div {
-            background-color: #f8f8f8;
-            color: black;
+            background-color: #f2f2f2;
+            color: #1c1c1c;
+            padding: 50px 20px;
+            text-align: center;
         }
 
         .projects-h, .our-vision-h {
             font-family: 'Quicksand', sans-serif;
-            font-size: 8vw;
-            margin: 50px 0 20px 0;
+            font-size: 5vw;
+            margin-top: 50px;
+            color: #C62828; /* Deep Red */
         }
 
-        .our-vision-p, .project-p {
-            font-size: 4vw;
+        .our-vision-p {
+            font-size: 1.6vw;
             white-space: pre-line;
-            max-width: 90%;
+            max-width: 800px;
             margin: 0 auto;
+            color: #E0E0E0; /* Light gray for readability */
+        }
+
+        .project-p {
+            font-size: 1.6vw;
+            white-space: pre-line;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #1c1c1c;
         }
 
         .float-container {
@@ -84,42 +93,43 @@
         .float-child {
             margin: 20px;
             text-align: center;
-            background-color: black;
-            border: 5px solid limegreen;
-            width: 90vw;
+            background-color: #303030; /* Dark gray */
+            border: 2px solid #C62828; /* Deep Red border */
+            width: 300px;
             padding: 20px;
-            transition: transform 0.3s;
+            transition: transform 0.3s, background-color 0.3s;
         }
 
         .float-child:hover {
             transform: translateY(-5px);
+            background-color: #424242; /* Slightly lighter on hover */
         }
 
         .float-child h1 {
-            font-size: 6vw;
+            font-size: 2.5vw;
             font-family: 'Urbanist', sans-serif;
-            color: white;
+            color: #C62828; /* Deep Red for headers */
         }
 
         .float-child h2 {
-            color: white;
-            font-size: 4vw;
+            color: #E0E0E0; /* Light gray for descriptions */
+            font-size: 1.5vw;
             padding: 15px;
         }
 
         .redirect {
-            background-color: limegreen;
-            color: white;
+            background-color: #FFB300; /* Warm Yellow for buttons */
+            color: #1c1c1c;
             border: none;
             padding: 10px 20px;
-            font-size: 4vw;
+            font-size: 1vw;
             font-weight: 600;
             cursor: pointer;
             transition: background-color 0.3s;
         }
 
         .redirect:hover {
-            background-color: darkgreen;
+            background-color: #FFD54F; /* Lighter yellow on hover */
         }
 
         .bottom {
@@ -127,11 +137,12 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px;
+            background-color: #121212; /* Match body background */
         }
 
         .small {
-            font-size: 6vw;
-            color: mintcream;
+            font-size: 2vw;
+            color: #C62828; /* Deep Red */
         }
 
         img {
@@ -139,61 +150,55 @@
             width: 50px;
             height: 40px;
         }
-                img:hover {
+
+        img:hover {
 			animation: scaleUp 700ms ease-in-out;
-              animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
         }
-        @keyframes scaleUp{
-    0%{
-      transform: scale(1.0);
-    }
-    100%{
-      transform: scale(1.5);
-    }
+        
+        @keyframes scaleUp {
+            0% { transform: scale(1.0); }
+            100% { transform: scale(1.5); }
         }
 
         /* Media query for smaller screens */
         @media (max-width: 768px) {
             .title {
-                font-size: 15vw;
+                font-size: 10vw;
             }
 
             .sub-heading {
-                font-size: 8vw;
+                font-size: 6vw;
             }
 
             .projects-h, .our-vision-h {
-                font-size: 12vw;
+                font-size: 7vw;
             }
 
             .our-vision-p, .project-p {
-                font-size: 5vw;
+                font-size: 4vw;
+            }
+
+            .float-child h1 {
+                font-size: 6vw;
+            }
+
+            .float-child h2 {
+                font-size: 4vw;
             }
 
             .redirect {
-                font-size: 5vw;
+                font-size: 4vw;
             }
 
             .small {
-                font-size: 8vw;
+                font-size: 6vw;
             }
 
             img {
                 width: 40px;
                 height: 30px;
             }
-                            img:hover {
-			animation: scaleUp 700ms ease-in-out;
-              animation-fill-mode: forwards;
-        }
-        @keyframes scaleUp{
-    0%{
-      transform: scale(1.0);
-    }
-    100%{
-      transform: scale(1.5);
-    }
-        }
         }
     </style>
 </head>
